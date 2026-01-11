@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-base.DNSimple",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://developer.dnsimple.com/v2/oauth/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://developer.dnsimple.com/"
+			}
+		]
+	}
+}
