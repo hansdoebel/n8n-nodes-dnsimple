@@ -44,6 +44,7 @@
 		"test:all": "bun test tests/",
 		"test:auth": "bun test tests/auth.test.ts",
 		"test:v2": "bun test tests/v2-*.test.ts",
+		"validate-release": "bun run scripts/validate-release.ts",
 		"prepublishOnly": "bun run build && bun run lint -c .eslintrc.prepublish.js nodes credentials package.json"
 	},
 	"publishConfig": {
@@ -62,7 +63,7 @@
 			"dist/credentials/DNSimpleApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/DNSimple/Dnsimple.node.js"
+			"dist/nodes/DNSimple/DNSimple.node.js"
 		]
 	},
 	"devDependencies": {

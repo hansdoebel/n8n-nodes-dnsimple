@@ -32,7 +32,7 @@ export class DNSimple implements INodeType {
 		],
 		properties: [
 			{
-				displayName: "Account",
+				displayName: 'Account Name or ID',
 				name: "accountId",
 				type: "options",
 				typeOptions: {
@@ -40,7 +40,7 @@ export class DNSimple implements INodeType {
 				},
 				default: "",
 				required: true,
-				description: "Select the DNSimple account to use",
+				description: 'Select the DNSimple account to use. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 			},
 			{
 				displayName: "Resource",
