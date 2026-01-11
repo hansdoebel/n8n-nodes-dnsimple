@@ -37,8 +37,11 @@
 		"format": "prettier nodes credentials --write",
 		"lint": "eslint nodes credentials package.json",
 		"lintfix": "eslint nodes credentials package.json --fix",
-		"test": "bun test",
-		"test:watch": "bun test --watch",
+		"test": "bun test tests/helpers tests/resources tests/registry.test.ts tests/mocks",
+		"test:watch": "bun test tests/helpers tests/resources tests/registry.test.ts --watch",
+		"test:e2e": "bun test tests/e2e/",
+		"test:e2e:watch": "bun test tests/e2e/ --watch",
+		"test:all": "bun test tests/",
 		"test:auth": "bun test tests/auth.test.ts",
 		"test:v2": "bun test tests/v2-*.test.ts",
 		"prepublishOnly": "bun run build && bun run lint -c .eslintrc.prepublish.js nodes credentials package.json"
