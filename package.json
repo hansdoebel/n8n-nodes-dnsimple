@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-dnsimple",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "DNSimple module for custom n8n node.",
 	"keywords": [
 		"n8n-community-node-package",
