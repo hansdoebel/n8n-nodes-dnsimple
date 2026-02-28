@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, test } from "bun:test";
-import { ResourceRegistry } from "../nodes/DNSimple/types/registry";
-import type { ResourceDefinition } from "../nodes/DNSimple/types/registry";
+import { ResourceRegistry } from "../nodes/DNSimple/helpers/types";
+import type { ResourceDefinition } from "../nodes/DNSimple/helpers/types";
 
 describe("ResourceRegistry", () => {
 	let registry: ResourceRegistry;

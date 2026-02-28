@@ -1,8 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { webhookListExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookList";
-import { webhookCreateExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookCreate";
-import { webhookGetExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookGet";
-import { webhookDeleteExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookDelete";
+import {
+	webhookListExecute,
+	webhookCreateExecute,
+	webhookGetExecute,
+	webhookDeleteExecute,
+} from "../../nodes/DNSimple/resources/webhooks/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("webhooks resource", () => {

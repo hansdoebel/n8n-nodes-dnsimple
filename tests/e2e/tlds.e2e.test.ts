@@ -6,9 +6,7 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { withDelay } from "./helpers";
-import { tldListExecute } from "../../nodes/DNSimple/resources/tlds/operations/TldList";
-import { tldGetExecute } from "../../nodes/DNSimple/resources/tlds/operations/TldGet";
-import { tldGetExtendedAttributesExecute } from "../../nodes/DNSimple/resources/tlds/operations/TldGetExtendedAttributes";
+import { tldListExecute, tldGetExecute, tldGetExtendedAttributesExecute } from "../../nodes/DNSimple/resources/tlds/operations";
 
 describe("TLDs E2E", () => {
 	beforeAll(async () => {

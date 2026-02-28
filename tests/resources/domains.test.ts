@@ -1,8 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { domainListExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainList";
-import { domainCreateExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainCreate";
-import { domainGetExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainGet";
-import { domainDeleteExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainDelete";
+import {
+	domainListExecute,
+	domainCreateExecute,
+	domainGetExecute,
+	domainDeleteExecute,
+} from "../../nodes/DNSimple/resources/domains/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("domains resource", () => {

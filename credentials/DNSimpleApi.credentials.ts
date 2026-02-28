@@ -5,13 +5,13 @@ import type {
 	ICredentialType,
 	INodeProperties,
 } from "n8n-workflow";
-import { DNSIMPLE_URLS } from "@constants/urls";
+import { DNSIMPLE_URLS } from "../nodes/DNSimple/helpers/constants";
 
 export class DNSimpleApi implements ICredentialType {
 	name = "dnsimpleApi";
 	displayName = "DNSimple API";
 	documentationUrl = "https://developer.dnsimple.com/v2/";
-	icon: Icon = "file:dnsimple.svg";
+	icon: Icon = "file:../icons/dnsimple.svg";
 	properties: INodeProperties[] = [
 		{
 			displayName: "Environment",

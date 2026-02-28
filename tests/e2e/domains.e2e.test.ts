@@ -6,10 +6,12 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { CleanupManager, generateTestDomainName, withDelay } from "./helpers";
-import { domainCreateExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainCreate";
-import { domainGetExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainGet";
-import { domainListExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainList";
-import { domainDeleteExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainDelete";
+import {
+	domainCreateExecute,
+	domainGetExecute,
+	domainListExecute,
+	domainDeleteExecute,
+} from "../../nodes/DNSimple/resources/domains/operations";
 
 describe("Domains E2E", () => {
 	const cleanup = new CleanupManager();

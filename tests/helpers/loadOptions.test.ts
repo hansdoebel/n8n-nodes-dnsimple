@@ -6,7 +6,7 @@ import {
 	getServices,
 	getTemplates,
 	getZones,
-} from "../../nodes/DNSimple/helpers/loadOptions";
+} from "../../nodes/DNSimple/methods/loadOptions";
 import { createMockLoadOptionsFunctions } from "../mocks/n8nContext";
 
 describe("loadOptions helpers", () => {

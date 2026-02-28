@@ -6,10 +6,12 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { CleanupManager, generateTestUrl, withDelay } from "./helpers";
-import { webhookCreateExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookCreate";
-import { webhookGetExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookGet";
-import { webhookListExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookList";
-import { webhookDeleteExecute } from "../../nodes/DNSimple/resources/webhooks/operations/WebhookDelete";
+import {
+	webhookCreateExecute,
+	webhookGetExecute,
+	webhookListExecute,
+	webhookDeleteExecute,
+} from "../../nodes/DNSimple/resources/webhooks/operations";
 
 describe("Webhooks E2E", () => {
 	const cleanup = new CleanupManager();

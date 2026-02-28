@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { accountListExecute } from "../../nodes/DNSimple/resources/accounts/operations/AccountList";
+import { accountListExecute } from "../../nodes/DNSimple/resources/accounts/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("accounts resource", () => {

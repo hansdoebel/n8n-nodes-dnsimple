@@ -1,10 +1,12 @@
 import { describe, expect, test } from "bun:test";
-import { zoneRecordListExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordList";
-import { zoneRecordCreateExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordCreate";
-import { zoneRecordGetExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordGet";
-import { zoneRecordUpdateExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordUpdate";
-import { zoneRecordDeleteExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordDelete";
-import { zoneRecordCheckDistributionExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordCheckDistribution";
+import {
+	zoneRecordListExecute,
+	zoneRecordCreateExecute,
+	zoneRecordGetExecute,
+	zoneRecordUpdateExecute,
+	zoneRecordDeleteExecute,
+	zoneRecordCheckDistributionExecute,
+} from "../../nodes/DNSimple/resources/zoneRecords/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("zoneRecords resource", () => {

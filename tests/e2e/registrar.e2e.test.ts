@@ -6,8 +6,10 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { withDelay } from "./helpers";
-import { checkAvailabilityExecute } from "../../nodes/DNSimple/resources/registrar/operations/CheckAvailability";
-import { getPricesExecute } from "../../nodes/DNSimple/resources/registrar/operations/GetPrices";
+import {
+	checkAvailabilityExecute,
+	getPricesExecute,
+} from "../../nodes/DNSimple/resources/registrar/operations";
 
 describe("Registrar E2E", () => {
 	beforeAll(async () => {

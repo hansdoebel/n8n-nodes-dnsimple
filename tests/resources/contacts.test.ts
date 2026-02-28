@@ -1,9 +1,11 @@
 import { describe, expect, test } from "bun:test";
-import { contactListExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactList";
-import { contactCreateExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactCreate";
-import { contactGetExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactGet";
-import { contactUpdateExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactUpdate";
-import { contactDeleteExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactDelete";
+import {
+	contactListExecute,
+	contactCreateExecute,
+	contactGetExecute,
+	contactUpdateExecute,
+	contactDeleteExecute,
+} from "../../nodes/DNSimple/resources/contacts/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("contacts resource", () => {

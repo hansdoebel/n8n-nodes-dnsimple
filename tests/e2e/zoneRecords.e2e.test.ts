@@ -6,14 +6,18 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { CleanupManager, generateTestDomainName, withDelay } from "./helpers";
-import { domainCreateExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainCreate";
-import { domainDeleteExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainDelete";
-import { zoneRecordCreateExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordCreate";
-import { zoneRecordGetExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordGet";
-import { zoneRecordListExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordList";
-import { zoneRecordUpdateExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordUpdate";
-import { zoneRecordDeleteExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordDelete";
-import { zoneRecordCheckDistributionExecute } from "../../nodes/DNSimple/resources/zoneRecords/operations/ZoneRecordCheckDistribution";
+import {
+	domainCreateExecute,
+	domainDeleteExecute,
+} from "../../nodes/DNSimple/resources/domains/operations";
+import {
+	zoneRecordCreateExecute,
+	zoneRecordGetExecute,
+	zoneRecordListExecute,
+	zoneRecordUpdateExecute,
+	zoneRecordDeleteExecute,
+	zoneRecordCheckDistributionExecute,
+} from "../../nodes/DNSimple/resources/zoneRecords/operations";
 
 describe("Zone Records E2E", () => {
 	const cleanup = new CleanupManager();

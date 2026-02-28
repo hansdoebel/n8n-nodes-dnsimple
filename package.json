@@ -32,19 +32,13 @@
 		"node": ">=18.10"
 	},
 	"scripts": {
-		"build": "tsc && tsc-alias && bun run build-icons.ts",
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
 		"dev": "n8n-node dev",
-		"format": "prettier nodes credentials --write",
-		"lint": "eslint nodes credentials package.json",
-		"lintfix": "eslint nodes credentials package.json --fix",
-		"test": "bun test tests/helpers tests/resources tests/registry.test.ts tests/mocks",
-		"test:watch": "bun test tests/helpers tests/resources tests/registry.test.ts --watch",
-		"test:e2e": "bun test tests/e2e/",
-		"test:e2e:watch": "bun test tests/e2e/ --watch",
-		"test:all": "bun test tests/",
-		"test:auth": "bun test tests/auth.test.ts",
-		"test:v2": "bun test tests/v2-*.test.ts",
-		"prepublishOnly": "bun run build && bun run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"test": "bun test"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -66,18 +60,14 @@
 		]
 	},
 	"devDependencies": {
-		"@n8n/node-cli": "^0.17.0",
-		"@types/bun": "latest",
-		"@types/luxon": "^3.7.1",
-		"@types/node": "^25.0.3",
-		"@typescript-eslint/parser": "^7.18.0",
-		"eslint": "^8.57.1",
-		"eslint-plugin-n8n-nodes-base": "^1.16.4",
-		"prettier": "^3.7.4",
-		"tsc-alias": "^1.8.16",
-		"typescript": "^5.9.3"
+		"@n8n/node-cli": "^0.21.0",
+		"@types/node": "^25.3.2",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.2.4",
+		"typescript": "5.9.2"
 	},
 	"peerDependencies": {
-		"n8n-workflow": "^2.2.1"
+		"n8n-workflow": "^2.10.0"
 	}
 }

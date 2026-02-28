@@ -1,8 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { templateRecordListExecute } from "../../nodes/DNSimple/resources/templateRecords/operations/TemplateRecordList";
-import { templateRecordCreateExecute } from "../../nodes/DNSimple/resources/templateRecords/operations/TemplateRecordCreate";
-import { templateRecordGetExecute } from "../../nodes/DNSimple/resources/templateRecords/operations/TemplateRecordGet";
-import { templateRecordDeleteExecute } from "../../nodes/DNSimple/resources/templateRecords/operations/TemplateRecordDelete";
+import {
+	templateRecordListExecute,
+	templateRecordCreateExecute,
+	templateRecordGetExecute,
+	templateRecordDeleteExecute,
+} from "../../nodes/DNSimple/resources/templateRecords/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("templateRecords resource", () => {

@@ -1,6 +1,8 @@
 import { describe, expect, test } from "bun:test";
-import { vanityNameServerEnableExecute } from "../../nodes/DNSimple/resources/vanityNameServers/operations/VanityNameServerEnable";
-import { vanityNameServerDisableExecute } from "../../nodes/DNSimple/resources/vanityNameServers/operations/VanityNameServerDisable";
+import {
+	vanityNameServerEnableExecute,
+	vanityNameServerDisableExecute,
+} from "../../nodes/DNSimple/resources/vanityNameServers/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("vanityNameServers resource", () => {

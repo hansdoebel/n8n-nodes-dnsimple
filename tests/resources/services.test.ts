@@ -1,8 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { serviceListExecute } from "../../nodes/DNSimple/resources/services/operations/ServiceList";
-import { serviceApplyExecute } from "../../nodes/DNSimple/resources/services/operations/ServiceApply";
-import { serviceListAppliedExecute } from "../../nodes/DNSimple/resources/services/operations/ServiceListApplied";
-import { serviceUnapplyExecute } from "../../nodes/DNSimple/resources/services/operations/ServiceUnapply";
+import {
+	serviceListExecute,
+	serviceApplyExecute,
+	serviceListAppliedExecute,
+	serviceUnapplyExecute,
+} from "../../nodes/DNSimple/resources/services/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("services resource", () => {

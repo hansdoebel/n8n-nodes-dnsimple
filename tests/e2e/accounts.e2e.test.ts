@@ -5,7 +5,7 @@ import {
 	ensureAccountId,
 	skipIfNotConfigured,
 } from "./config";
-import { accountListExecute } from "../../nodes/DNSimple/resources/accounts/operations/AccountList";
+import { accountListExecute } from "../../nodes/DNSimple/resources/accounts/operations";
 
 describe("Accounts E2E", () => {
 	beforeAll(async () => {

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import { getBaseUrl } from "../../nodes/DNSimple/helpers/apiRequest";
-import { DNSIMPLE_URLS } from "../../nodes/DNSimple/constants/urls";
+import { getBaseUrl } from "../../nodes/DNSimple/methods/apiRequest";
+import { DNSIMPLE_URLS } from "../../nodes/DNSimple/helpers/constants";
 
 describe("apiRequest helpers", () => {
 	describe("getBaseUrl", () => {

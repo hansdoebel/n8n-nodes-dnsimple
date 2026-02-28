@@ -1,8 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import { emailForwardListExecute } from "../../nodes/DNSimple/resources/emailForwards/operations/EmailForwardList";
-import { emailForwardCreateExecute } from "../../nodes/DNSimple/resources/emailForwards/operations/EmailForwardCreate";
-import { emailForwardGetExecute } from "../../nodes/DNSimple/resources/emailForwards/operations/EmailForwardGet";
-import { emailForwardDeleteExecute } from "../../nodes/DNSimple/resources/emailForwards/operations/EmailForwardDelete";
+import {
+	emailForwardListExecute,
+	emailForwardCreateExecute,
+	emailForwardGetExecute,
+	emailForwardDeleteExecute,
+} from "../../nodes/DNSimple/resources/emailForwards/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("emailForwards resource", () => {

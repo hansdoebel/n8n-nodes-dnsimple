@@ -20,15 +20,6 @@
 		"sourceMap": true,
 		"skipLibCheck": true,
 		"outDir": "./dist/",
-		"baseUrl": ".",
-		"paths": {
-			"@dnsimple/*": ["nodes/DNSimple/*"],
-			"@constants/*": ["nodes/DNSimple/constants/*"],
-			"@helpers/*": ["nodes/DNSimple/helpers/*"],
-			"@dnsimple-types/*": ["nodes/DNSimple/types/*"],
-			"@resources/*": ["nodes/DNSimple/resources/*"],
-			"@icons/*": ["icons/*"],
-		},
 	},
 	"include": ["credentials/**/*", "nodes/**/*", "nodes/**/*.json", "package.json"],
 }

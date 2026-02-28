@@ -6,12 +6,16 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { CleanupManager, generateTestDomainName, withDelay } from "./helpers";
-import { domainCreateExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainCreate";
-import { domainDeleteExecute } from "../../nodes/DNSimple/resources/domains/operations/DomainDelete";
-import { zoneGetExecute } from "../../nodes/DNSimple/resources/zones/operations/ZoneGet";
-import { zoneListExecute } from "../../nodes/DNSimple/resources/zones/operations/ZoneList";
-import { zoneCheckDistributionExecute } from "../../nodes/DNSimple/resources/zones/operations/ZoneCheckDistribution";
-import { zoneDownloadFileExecute } from "../../nodes/DNSimple/resources/zones/operations/ZoneDownloadFile";
+import {
+	domainCreateExecute,
+	domainDeleteExecute,
+} from "../../nodes/DNSimple/resources/domains/operations";
+import {
+	zoneGetExecute,
+	zoneListExecute,
+	zoneCheckDistributionExecute,
+	zoneDownloadFileExecute,
+} from "../../nodes/DNSimple/resources/zones/operations";
 
 describe("Zones E2E", () => {
 	const cleanup = new CleanupManager();

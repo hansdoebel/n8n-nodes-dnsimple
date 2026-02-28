@@ -1,9 +1,11 @@
 import { describe, expect, test } from "bun:test";
-import { checkAvailabilityExecute } from "../../nodes/DNSimple/resources/registrar/operations/CheckAvailability";
-import { getPricesExecute } from "../../nodes/DNSimple/resources/registrar/operations/GetPrices";
-import { registerExecute } from "../../nodes/DNSimple/resources/registrar/operations/Register";
-import { renewExecute } from "../../nodes/DNSimple/resources/registrar/operations/Renew";
-import { transferExecute } from "../../nodes/DNSimple/resources/registrar/operations/Transfer";
+import {
+	checkAvailabilityExecute,
+	getPricesExecute,
+	registerExecute,
+	renewExecute,
+	transferExecute,
+} from "../../nodes/DNSimple/resources/registrar/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("registrar resource", () => {

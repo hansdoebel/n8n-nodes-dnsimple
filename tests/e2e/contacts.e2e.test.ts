@@ -6,11 +6,13 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { CleanupManager, generateTestEmail, withDelay } from "./helpers";
-import { contactCreateExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactCreate";
-import { contactGetExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactGet";
-import { contactListExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactList";
-import { contactUpdateExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactUpdate";
-import { contactDeleteExecute } from "../../nodes/DNSimple/resources/contacts/operations/ContactDelete";
+import {
+	contactCreateExecute,
+	contactGetExecute,
+	contactListExecute,
+	contactUpdateExecute,
+	contactDeleteExecute,
+} from "../../nodes/DNSimple/resources/contacts/operations";
 
 describe("Contacts E2E", () => {
 	const cleanup = new CleanupManager();

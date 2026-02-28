@@ -1,60 +1,70 @@
-# n8n-nodes-dnsimple
+<h1 align="center">
+  <br>
+  n8n-nodes-dnsimple
+  <br>
+</h1>
 
-n8n community node for integrating DNSimple DNS and domain management with your workflows.
+<p align="center">
+  <a href="https://www.npmjs.com/package/n8n-nodes-dnsimple"><img src="https://img.shields.io/npm/v/n8n-nodes-dnsimple.svg" alt="NPM Version"></a>
+  <a href="https://github.com/hansdoebel/n8n-nodes-dnsimple/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/hansdoebel/n8n-nodes-dnsimple" alt="GitHub License"></a>
+  <a href="https://www.npmjs.com/package/n8n-nodes-dnsimple"><img src="https://img.shields.io/npm/dt/n8n-nodes-dnsimple.svg" alt="NPM Downloads"></a>
+  <a href="https://www.npmjs.com/package/n8n-nodes-dnsimple"><img src="https://img.shields.io/npm/last-update/n8n-nodes-dnsimple" alt="NPM Last Update"></a>
+  <img src="https://img.shields.io/badge/n8n-2.9.4-blue" alt="n8n 2.9.4">
+</p>
 
-## Table of Contents
+<p align="center">
+  <a href="#installation">Installation</a> |
+  <a href="#credentials">Credentials</a> |
+  <a href="#resources">Resources</a> |
+  <a href="#development">Development</a> |
+  <a href="#license">License</a>
+</p>
 
-- [Installation](#installation)
-- [Credentials](#credentials)
-- [Operations](#operations)
-- [Compatibility](#compatibility)
-- [Development Notes](#development-notes)
-- [Resources](#resources)
-- [Version History](#version-history)
+---
+
+An n8n community node for integrating [DNSimple](https://dnsimple.com) DNS and domain management with your workflows.
 
 ## Installation
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
-
-1. Go to **Settings** > **Community Nodes**
-2. Select **Install**
-3. Enter `n8n-nodes-dnsimple` in the **npm Package Name** field
-4. Agree to the risks of using community nodes
-5. Select **Install**
+1. Make a new workflow or open an existing one
+2. Open the nodes panel by selecting **+** or pressing **Tab**
+3. Search for **DNSimple**
+4. Select **Install** to install the node for your instance
 
 ## Credentials
 
-### DNSimple API Token
-
-1. Log in to your DNSimple account
+1. Log in to your [DNSimple](https://dnsimple.com) account
 2. Go to **Account** > **Access Tokens**
 3. Click **New access token** (User or Account token)
 4. Copy the generated token
-5. In n8n: Create new credential > **DNSimple API**
-6. Select **Environment** (Production or Sandbox)
-7. Paste your API token
-8. Save
+5. In n8n, create a new **DNSimple API** credential
+6. Select the **Environment** (Production or Sandbox)
+7. Paste your API token and save
 
 **Token Types:**
-- **Account tokens**: Access to a single account's resources (recommended)
-- **User tokens**: Access to all accounts the user has access to
+- **Account tokens** -- access to a single account's resources (recommended)
+- **User tokens** -- access to all accounts the user has access to
 
 **Environments:**
-- **Production**: `https://api.dnsimple.com`
-- **Sandbox**: `https://api.sandbox.dnsimple.com` (for testing)
+- **Production** -- `https://api.dnsimple.com`
+- **Sandbox** -- `https://api.sandbox.dnsimple.com` (for testing)
 
-## Operations
+## Resources
 
-### Account
+<details>
+<summary><strong>Account</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | List | List all accounts accessible with the current token |
 
-### Certificate
+</details>
+
+<details>
+<summary><strong>Certificate</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Download | Download a certificate |
 | Get | Get certificate details |
 | Get Private Key | Get certificate private key |
@@ -63,26 +73,35 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 | Order | Order a new Let's Encrypt certificate |
 | Renew | Renew an existing certificate |
 
-### Contact
+</details>
+
+<details>
+<summary><strong>Contact</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Create | Create a new contact |
 | Delete | Delete a contact |
 | Get | Get contact details |
 | List | List all contacts |
 | Update | Update a contact |
 
-### DNS Analytics
+</details>
+
+<details>
+<summary><strong>DNS Analytics</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Query | Query DNS analytics data |
 
-### DNSSEC
+</details>
+
+<details>
+<summary><strong>DNSSEC</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Create DS Record | Create a delegation signer record |
 | Delete DS Record | Delete a delegation signer record |
 | Disable | Disable DNSSEC for a domain |
@@ -91,56 +110,74 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 | Get Status | Get DNSSEC status for a domain |
 | List DS Records | List delegation signer records |
 
-### Domain
+</details>
+
+<details>
+<summary><strong>Domain</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Create | Add a domain to an account |
 | Delete | Delete a domain |
 | Get | Get domain details |
 | List | List all domains |
 
-### Domain Push
+</details>
+
+<details>
+<summary><strong>Domain Push</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Accept | Accept a domain push |
 | Initiate | Initiate a domain push to another account |
 | List | List pending domain pushes |
 | Reject | Reject a domain push |
 
-### Email Forward
+</details>
+
+<details>
+<summary><strong>Email Forward</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Create | Create an email forward |
 | Delete | Delete an email forward |
 | Get | Get email forward details |
 | List | List email forwards for a domain |
 
-### Registrar
+</details>
+
+<details>
+<summary><strong>Registrar</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Check Availability | Check domain availability |
 | Get Prices | Get domain registration prices |
 | Register | Register a new domain |
 | Renew | Renew a domain registration |
 | Transfer | Transfer a domain to DNSimple |
 
-### Service
+</details>
+
+<details>
+<summary><strong>Service</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Apply | Apply a one-click service to a domain |
 | List | List all available one-click services |
 | List Applied | List services applied to a domain |
 | Unapply | Remove a one-click service from a domain |
 
-### Template
+</details>
+
+<details>
+<summary><strong>Template</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Apply to Domain | Apply a template to a domain |
 | Create | Create a new template |
 | Delete | Delete a template |
@@ -148,42 +185,57 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 | List | List all templates |
 | Update | Update a template |
 
-### Template Record
+</details>
+
+<details>
+<summary><strong>Template Record</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Create | Create a record in a template |
 | Delete | Delete a record from a template |
 | Get | Get template record details |
 | List | List records in a template |
 
-### TLD
+</details>
+
+<details>
+<summary><strong>TLD</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Get | Get TLD details |
 | List | List all supported TLDs |
 
-### Vanity Name Server
+</details>
+
+<details>
+<summary><strong>Vanity Name Server</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Disable | Disable vanity name servers for a domain |
 | Enable | Enable vanity name servers for a domain |
 
-### Webhook
+</details>
+
+<details>
+<summary><strong>Webhook</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Create | Create a webhook |
 | Delete | Delete a webhook |
 | Get | Get webhook details |
 | List | List all webhooks |
 
-### Zone
+</details>
+
+<details>
+<summary><strong>Zone</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Activate | Activate DNS resolution for a zone |
 | Check Distribution | Check zone distribution across DNSimple name servers |
 | Deactivate | Deactivate DNS resolution for a zone |
@@ -191,10 +243,13 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 | Get | Get zone details |
 | List | List all zones |
 
-### Zone Record
+</details>
+
+<details>
+<summary><strong>Zone Record</strong></summary>
 
 | Operation | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Check Distribution | Check record distribution across name servers |
 | Create | Create a DNS record |
 | Delete | Delete a DNS record |
@@ -202,75 +257,24 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 | List | List DNS records in a zone |
 | Update | Update a DNS record |
 
-## Compatibility
+</details>
 
-Tested with:
-
-- n8n Version: 2.2.3
-- Node Version: 22.11.0
-
-## Development Notes
-
-### Kill n8n Process
-
-Add this alias to your `~/.zshrc` for quick n8n process termination during development:
+## Development
 
 ```bash
-alias kill-n8n="kill -9 \$(lsof -ti tcp:5678 -sTCP:LISTEN)"
+git clone https://github.com/hansdoebel/n8n-nodes-dnsimple.git
+cd n8n-nodes-dnsimple
+npm install
+npm run build
+npm run lint
 ```
 
-After adding, reload your shell: `source ~/.zshrc`
+## License
 
-### Publish New Release
+[MIT](LICENSE.md)
 
-```
-# Bump the version
-npm version patch|minor|major
-```
-
-```
-# push the tag to GitHub
-git push origin v1.2.3
-```
-
-### Add MCP Server to Zed IDE
-
-"Add custom Server..." -> "Configure Remote" -> "Add Server"
-
-```
-{
-  /// The name of your remote MCP server
-  "n8n-mcp": {
-    /// The URL of the remote MCP server
-    "url": "http://localhost:5678/mcp-server/http",
-    "headers": {
-    /// Any headers to send along
-    "Authorization": "Bearer <TOKEN>"
-    }
-  }
-}
-```
-Available Tools:		
-- execute_workflow	
-- get_workflow_details
-- search_workflows
-
-## Resources
-
-- [n8n Website](https://n8n.io/)
-- [n8n Community Nodes Documentation](https://docs.n8n.io/integrations/community-nodes/)
-- [n8n Documentation for LLMs](https://docs.n8n.io/llms.txt)
-
-- [DNSimple Website](https://dnsimple.com/)
-- [DNSimple – API Libraries](https://dnsimple.com/api)
-- [DNSimple – API Documentation](https://developer.dnsimple.com/)
-- [DNSimple – Sandbox Environment](https://developer.dnsimple.com/sandbox/)
-- [DNSimple – Logos](https://dnsimple.com/logos)
-
-- [GitHub Repository](https://github.com/hansdoebel/n8n-nodes-dnsimple)
-- [@n8n/node-cli README](https://raw.githubusercontent.com/n8n-io/n8n/refs/heads/master/packages/%40n8n/node-cli/README.md)
-
-
-## Version History
-
-- `0.0.1` - Initial release
+<p align="center">
+  <a href="https://github.com/hansdoebel/n8n-nodes-dnsimple">GitHub</a> |
+  <a href="https://github.com/hansdoebel/n8n-nodes-dnsimple/issues">Issues</a> |
+  <a href="https://developer.dnsimple.com">DNSimple API Docs</a>
+</p>

@@ -1,7 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { tldListExecute } from "../../nodes/DNSimple/resources/tlds/operations/TldList";
-import { tldGetExecute } from "../../nodes/DNSimple/resources/tlds/operations/TldGet";
-import { tldGetExtendedAttributesExecute } from "../../nodes/DNSimple/resources/tlds/operations/TldGetExtendedAttributes";
+import { tldListExecute, tldGetExecute, tldGetExtendedAttributesExecute } from "../../nodes/DNSimple/resources/tlds/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("tlds resource", () => {

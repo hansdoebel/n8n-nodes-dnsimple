@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { dnsAnalyticsQueryExecute } from "../../nodes/DNSimple/resources/dnsAnalytics/operations/DnsAnalyticsQuery";
+import { dnsAnalyticsQueryExecute } from "../../nodes/DNSimple/resources/dnsAnalytics/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("dnsAnalytics resource", () => {

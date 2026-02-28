@@ -6,11 +6,13 @@ import {
 	skipIfNotConfigured,
 } from "./config";
 import { CleanupManager, generateUniqueName, withDelay } from "./helpers";
-import { templateCreateExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateCreate";
-import { templateGetExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateGet";
-import { templateListExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateList";
-import { templateUpdateExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateUpdate";
-import { templateDeleteExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateDelete";
+import {
+	templateCreateExecute,
+	templateGetExecute,
+	templateListExecute,
+	templateUpdateExecute,
+	templateDeleteExecute,
+} from "../../nodes/DNSimple/resources/templates/operations";
 
 describe("Templates E2E", () => {
 	const cleanup = new CleanupManager();

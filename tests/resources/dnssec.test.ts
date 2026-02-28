@@ -1,11 +1,13 @@
 import { describe, expect, test } from "bun:test";
-import { dnssecGetStatusExecute } from "../../nodes/DNSimple/resources/dnssec/operations/DnssecGetStatus";
-import { dnssecEnableExecute } from "../../nodes/DNSimple/resources/dnssec/operations/DnssecEnable";
-import { dnssecDisableExecute } from "../../nodes/DNSimple/resources/dnssec/operations/DnssecDisable";
-import { dnssecListDsRecordsExecute } from "../../nodes/DNSimple/resources/dnssec/operations/DnssecListDsRecords";
-import { dnssecCreateDsRecordExecute } from "../../nodes/DNSimple/resources/dnssec/operations/DnssecCreateDsRecord";
-import { dnssecGetDsRecordExecute } from "../../nodes/DNSimple/resources/dnssec/operations/DnssecGetDsRecord";
-import { dnssecDeleteDsRecordExecute } from "../../nodes/DNSimple/resources/dnssec/operations/DnssecDeleteDsRecord";
+import {
+	dnssecGetStatusExecute,
+	dnssecEnableExecute,
+	dnssecDisableExecute,
+	dnssecListDsRecordsExecute,
+	dnssecCreateDsRecordExecute,
+	dnssecGetDsRecordExecute,
+	dnssecDeleteDsRecordExecute,
+} from "../../nodes/DNSimple/resources/dnssec/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("dnssec resource", () => {

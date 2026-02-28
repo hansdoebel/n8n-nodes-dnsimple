@@ -1,11 +1,13 @@
 import { describe, expect, test } from "bun:test";
-import { certificateGetExecute } from "../../nodes/DNSimple/resources/certificates/operations/CertificateGet";
-import { certificateListExecute } from "../../nodes/DNSimple/resources/certificates/operations/CertificateList";
-import { certificateDownloadExecute } from "../../nodes/DNSimple/resources/certificates/operations/CertificateDownload";
-import { certificateGetPrivateKeyExecute } from "../../nodes/DNSimple/resources/certificates/operations/CertificateGetPrivateKey";
-import { certificateOrderExecute } from "../../nodes/DNSimple/resources/certificates/operations/CertificateOrder";
-import { certificateIssueExecute } from "../../nodes/DNSimple/resources/certificates/operations/CertificateIssue";
-import { certificateRenewExecute } from "../../nodes/DNSimple/resources/certificates/operations/CertificateRenew";
+import {
+	certificateDownloadExecute,
+	certificateGetExecute,
+	certificateGetPrivateKeyExecute,
+	certificateIssueExecute,
+	certificateListExecute,
+	certificateOrderExecute,
+	certificateRenewExecute,
+} from "../../nodes/DNSimple/resources/certificates/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("certificates resource", () => {

@@ -1,10 +1,12 @@
 import { describe, expect, test } from "bun:test";
-import { templateListExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateList";
-import { templateCreateExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateCreate";
-import { templateGetExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateGet";
-import { templateUpdateExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateUpdate";
-import { templateDeleteExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateDelete";
-import { templateApplyToDomainExecute } from "../../nodes/DNSimple/resources/templates/operations/TemplateApplyToDomain";
+import {
+	templateListExecute,
+	templateCreateExecute,
+	templateGetExecute,
+	templateUpdateExecute,
+	templateDeleteExecute,
+	templateApplyToDomainExecute,
+} from "../../nodes/DNSimple/resources/templates/operations";
 import { createMockExecuteFunctions } from "../mocks/n8nContext";
 
 describe("templates resource", () => {
